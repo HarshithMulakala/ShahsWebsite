@@ -10,9 +10,9 @@
     {
       "src": "/(.*)",
       "dest": "/server.js",
+      "methods": ["POST"],
       "methods": ["GET", "POST"],
       "methods": ["POST", "GET"],
-      "methods": ["POST"],
       "methods": ["GET"]
     }
   ]
