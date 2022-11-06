@@ -11,6 +11,8 @@
       "src": "/(.*)",
       "dest": "/server.js",
       "methods": ["GET", "POST"]
+      "methods": ["POST", "GET"]
+      "methods": ["POST"]
     }
   ]
 }
