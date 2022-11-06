@@ -1,0 +1,369 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* HEADER STUFF */
+.headerContact {
+  display: none;
+  position: fixed;
+  right: 0;
+  height: 108px;
+  padding: 0;
+}
+
+.headerContact a {
+  background-color: #AACC00;
+  height: 108px;
+  border: 3px solid black;
+  border-top: 0px;
+  opacity: 1;
+}
+
+.container {
+  z-index: 1000;
+  margin: 0 auto;
+}
+
+.main-header-img {
+  width: 100%;
+  height: 108px;
+  background-color: #99cc33;
+}
+
+.main-header {
+  z-index: 1000;
+  text-align: center;
+  height: 108px;
+  position: fixed;
+  padding: 2em;
+  width: 100%;
+  /*background-image: url("https://img.freepik.com/premium-photo/abstract-art-background-bright-yellow-golden-colors-watercolor-painting-canvas-with-amber-soft-gradient-fragment-ocher-artwork-with-pattern-texture-backdrop_113767-4923.jpg?w=2000");
+  */
+  background-size: cover;
+  background-position: center;
+  background-color: #AACC00;
+  opacity: 1;
+  border-bottom: 3px solid black;
+}
+
+.main-header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.Home {
+  padding-top: 1.07em;
+  margin: 0;
+  top: -10%;
+  padding-left: 1em;
+  position: absolute;
+  left: 0%;
+}
+
+.Home img {
+  height: 80px;
+}
+
+.hText {
+  text-align: center;
+  margin: 0;
+}
+
+.hText a {
+  text-decoration: none;
+  color: black;
+}
+
+.main-nav {
+  z-index: 1000;
+  z-index: 99;
+  position: absolute;
+  background: #DDDF00;
+  top: 100%;
+  right: 0%;
+  -webkit-clip-path: circle(0% at top right);
+  clip-path: circle(0% at top right);
+  transition: -webkit-clip-path ease-in-out 500ms;
+  transition: clip-path ease-in-out 500ms;
+  transition: clip-path ease-in-out 500ms, -webkit-clip-path ease-in-out 500ms;
+}
+
+.main-nav-active {
+  -webkit-clip-path: circle(150% at top left);
+  clip-path: circle(150% at top left);
+}
+
+.main-nav ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav li {
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.main-nav a {
+  text-align: center;
+  color: black;
+  display: block;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2em 6em;
+}
+
+.main-nav a:hover {
+  background: #0a5d00;
+  color: white;
+}
+
+.main-nav a:hover .main-nav-icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: white;
+}
+
+.main-nav-icon {
+  display: inline-block;
+  font-size: 1.5em;
+  margin-right: 1em;
+  width: 1.1em;
+  text-align: right;
+  color: black;
+}
+
+.menu {
+  position: absolute;
+  padding-right: 0.3em;
+  padding-top: 1em;
+  margin: 0;
+  top: 33%;
+  right: 2em;
+  cursor: pointer;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: block;
+  background: black;
+  height: 3px;
+  width: 1.75em;
+  border-radius: 3px;
+  transition: all ease-in-out 500ms;
+}
+
+.hamburger::before {
+  transform: translateY(-6px);
+}
+
+.hamburger::after {
+  transform: translateY(3px);
+}
+
+.open .hamburger {
+  transform: rotate(45deg);
+}
+
+.open .hamburger::before {
+  opacity: 0;
+}
+
+.open .hamburger::after {
+  transform: translateY(-3px) rotate(-90deg);
+}
+
+.navContact ul {
+  margin: 0;
+}
+
+.navContact li {
+  display: grid;
+}
+
+.navContact a {
+  color: black;
+  display: grid;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 1em;
+  padding-right: 1em;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+.navContact {
+  text-align: right;
+}
+
+.navContact a:hover {
+  background-color: whitesmoke;
+  opacity: 1;
+}
+
+/* HEADER STUFF */
+body {
+  color: black;
+}
+
+.HomeSection1 {
+  background: linear-gradient(to right, #2B9348, #80B918, #2B9348);
+  background-size: 200%;
+  width: 100%;
+  border-bottom: 4px solid black;
+  padding: 20em;
+  text-align: center;
+  margin: 0;
+  -webkit-animation: background-pan 5s linear infinite;
+  animation: background-pan 5s linear infinite;
+}
+
+.HomeSection2TopText {
+  z-index: 99;
+  margin-bottom: 0;
+  padding: 1em;
+  text-align: center;
+  background-size: 100% 100%;
+  background-position: center;
+  background-color: grey;
+  background-blend-mode: multiply;
+}
+
+.LatestBlog {
+  padding-top: 25em;
+  padding-bottom: 25em;
+  margin: auto;
+  margin-bottom: 30px;
+  width: 50%;
+  height: auto;
+  border: 5px solid black;
+}
+
+.HomeSection2Line {
+  border-bottom: 4px solid black;
+}
+
+.btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: #f1cc8f;
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.blog-section {
+  width: 100%;
+  padding: 50px 5vw;
+  display: line;
+}
+
+.blog-image {
+  width: 50%;
+  height: 250px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.blog-overview {
+  line-height: 30px;
+  margin: 10px 0 20px;
+}
+
+.HomeSection3 {
+  padding: 2em;
+  text-align: center;
+}
+
+.HomeSection3 button {
+  background-color: #ffcc00;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.HomeSection3 button:hover {
+  background-color: #f1cc8f;
+}
+
+@media screen and (min-width: 1740px) {
+  .menu {
+    display: none;
+  }
+
+  .main-nav {
+    margin: 0;
+    padding: 0;
+    height: 108px;
+    position: absolute;
+    top: 15%;
+    background: transparent;
+    float: right;
+    -webkit-clip-path: initial;
+    clip-path: initial;
+  }
+
+  .main-nav ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .main-nav li {
+    text-align: center;
+    display: inline-block;
+    border: none;
+  }
+
+  .main-nav a {
+    padding: 10px 10px;
+    display: inline-block;
+    margin-left: 3em;
+  }
+
+  .main-nav a:hover .main-nav li {
+    background: #0a5d00;
+    color: white;
+  }
+
+  .main-nav a:hover .main-nav-icon {
+    display: none;
+  }
+
+  .main-nav-icon {
+    display: none;
+  }
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
