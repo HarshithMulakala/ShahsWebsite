@@ -20,12 +20,12 @@ app.post('/upload', (req, res) => {
 
     let imagename = date.getDate() + date.getTime() + file.name;
 
-    let path = 'public/' + imagename;
+    let path = 'public/upload/' + imagename;
 
     file.mv(path, (err, result) => {
         if (err) { throw err; }
         else {
-            res.json('/' + imagename);
+            res.json('upload/' + imagename);
         }
     });
 });
