@@ -42,3 +42,5 @@ app.listen(port, () => {
     console.log(initial_path);
     console.log('Server is up!');
 });
+
+module.exports = app;
