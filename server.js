@@ -20,8 +20,6 @@ app.post('/upload', (req, res) => {
 
     let path = __dirname + '/public/uploads/' + imagename;
 
-    let path = 'https://cashonomics.onrender.com/uploads/' + imagename;
-
     file.mv(path, (err, result) => {
         if (err) { throw err; }
         else {
