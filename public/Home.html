@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <link rel="icon" href="images/Cashnomics.png">
+    <script src="https://kit.fontawesome.com/701947c21b.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js"
+        integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <script src="js/main.js"></script>
+    <title>Home</title>
+    <meta name="description" content="Cashnomics">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="main-header fade-scroll">
+        <div class="container">
+            <a class="Home" href="/Home.html"><img class="HomeImage" src="/images/Cashonomics.png" alt=""></a>
+
+            <h1 class="hText"><span>Cashonomics</span></h1>
+
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="/Home.html"><i class="fa-solid fa-home main-nav-icon"></i>Home</a></li>
+                    <li><a href="/Mission.html"><i class="fa-solid fa-flag main-nav-icon"></i>Mission</a></li>
+                    <li><a href=""><i class="fa-solid fa-calendar-days main-nav-icon"></i>Events</a></li>
+                    <li><a href="/Blogs.html"><i class="fa-sharp fa-solid fa-pen-fancy main-nav-icon"></i>Blog</a></li>
+                    <li><a href=""><i class="fa-solid fa-podcast main-nav-icon"></i>Moneyworld</a></li>
+                    <li><a href=""><i class="fa-solid fa-handshake main-nav-icon"></i>Partners</a></li>
+                    <li><a href=""><i class="fa fa-envelope main-nav-icon"></i>Contact</a></li>
+                    <li><a href="/Mission.html"><i class="fa-solid fa-address-card main-nav-icon"></i>About Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu">
+                <div class="hamburger">
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="headerContact">
+        <nav class="navContact">
+            <ul>
+
+                <li class="ContactUs"><a href=""><span>Contact Us</span></a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+
+    <section class="main-header-img">
+    </section>
+    <div class="HomeSection1">
+
+        <video autoplay muted loop src="images/Stock.mp4" class="MoneyBackground"></video>
+        <div><span style="--i:1">Educating </span><span style="--i:2">the </span><span style="--i:3">world </span><span
+                style="--i:4">about </span><span style="--i:5">financial </span><span style="--i:6">literacy,
+            </span><span style="--i:7">no </span><span style="--i:8">matter </span><span style="--i:9">their
+            </span><span style="--i:10">age.</span></div>
+
+
+    </div>
+    <div class="HomeSection2 HomeSection2TopText">
+        <section class=HomeSection2BG></section>
+        <h1>Check Out Our Latest Blog!</h1>
+        <section class="blog-section">
+            <!-- <div class="blog-card">
+                <img src="images/header.png" class="blog-image" alt="">
+                <h1 class="blog-title">Blog title</h1>
+                <p class="blog-overview">This is the very long blog description, please change it to your liking.</p>
+                <a href="/" class="btn dark">Read More!</a>
+            </div> -->
+        </section>
+    </div>
+
+    <script src="js/firebase.js"></script>
+
+    <script src="js/HomeBlog.js"></script>
+    <section class="HomeSection2 HomeSection2Line">
+    </section>
+
+    <section class="HomeSection3">
+        <a href="/Mission.html">
+            <button>Learn More About Us!</button>
+        </a>
+    </section>
+</body>
+
+</html>
