@@ -18,7 +18,7 @@ app.post('/upload', (req, res) => {
     let file = req.files.image;
     let date = new Date();
 
-    let path = __dirname + '/public/uploads/' + imagename;
+    let path = '/public/uploads/' + imagename;
 
     file.mv(path, (err, result) => {
         if (err) { throw err; }
