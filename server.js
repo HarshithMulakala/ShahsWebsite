@@ -18,7 +18,7 @@ app.post('/upload', (req, res) => {
     let file = req.files.image;
     let date = new Date();
 
-    let imagename = date.getDate() + date.getTime() + file.name;
+    let path = __dirname + '/public/uploads/' + imagename;
 
     let path = 'https://cashonomics.onrender.com/uploads/' + imagename;
 
